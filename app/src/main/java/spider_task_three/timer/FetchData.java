@@ -19,7 +19,7 @@ public class FetchData {
     {
         URL url = new URL(urlspec);
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-        connection.setConnectTimeout(30000);
+        connection.setConnectTimeout(60000);
 
         try {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
